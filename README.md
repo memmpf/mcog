@@ -1,0 +1,2 @@
+# mcog
+Simple colored logging
