@@ -1,31 +1,31 @@
 // Colors
 var Reset = "\x1b[0m",
-	Bright = "\x1b[1m",
-	Dim = "\x1b[2m",
-	Underscore = "\x1b[4m",
-	Blink = "\x1b[5m",
-	Reverse = "\x1b[7m",
-	Hidden = "\x1b[8m",
+  Bright = "\x1b[1m",
+  Dim = "\x1b[2m",
+  Underscore = "\x1b[4m",
+  Blink = "\x1b[5m",
+  Reverse = "\x1b[7m",
+  Hidden = "\x1b[8m",
 
-// Text colors
-	FgBlack = "\x1b[30m",
-	FgRed = "\x1b[31m",
-	FgGreen = "\x1b[32m",
-	FgYellow = "\x1b[33m",
-	FgBlue = "\x1b[34m",
-	FgMagenta = "\x1b[35m",
-	FgCyan = "\x1b[36m",
-	FgWhite = "\x1b[37m",
+  // Text colors
+  FgBlack = "\x1b[30m",
+  FgRed = "\x1b[31m",
+  FgGreen = "\x1b[32m",
+  FgYellow = "\x1b[33m",
+  FgBlue = "\x1b[34m",
+  FgMagenta = "\x1b[35m",
+  FgCyan = "\x1b[36m",
+  FgWhite = "\x1b[37m",
 
-// Background colors
-	BgBlack = "\x1b[40m",
-	BgRed = "\x1b[41m",
-	BgGreen = "\x1b[42m",
-	BgYellow = "\x1b[43m",
-	BgBlue = "\x1b[44m",
-	BgMagenta = "\x1b[45m",
-	BgCyan = "\x1b[46m",
-	BgWhite = "\x1b[47m";
+  // Background colors
+  BgBlack = "\x1b[40m",
+  BgRed = "\x1b[41m",
+  BgGreen = "\x1b[42m",
+  BgYellow = "\x1b[43m",
+  BgBlue = "\x1b[44m",
+  BgMagenta = "\x1b[45m",
+  BgCyan = "\x1b[46m",
+  BgWhite = "\x1b[47m";
 
 
 /**
@@ -34,8 +34,8 @@ var Reset = "\x1b[0m",
  * @returns {string}
  */
 function times() {
-	var d = new Date();
-	return d.getHours() + ':' + ('0' + d.getMinutes()).slice(-2) + ' ' + Reset;
+  var d = new Date();
+  return d.getHours() + ':' + ('0' + d.getMinutes()).slice(-2) + ' ' + Reset;
 }
 
 module.exports = {
@@ -43,34 +43,34 @@ module.exports = {
 	/**
 	 * Logs with timestamp
 	 */
-	tlog: function (string) {
-		console.log(times() + string);
-	},
+  tlog: function (string) {
+    console.log(times() + string);
+  },
 
   /**
 	 * Just log 
-	 */	
-  log : (string) => {
-		console.log(string);
-	},
+	 */
+  log: (string) => {
+    console.log(string);
+  },
 
 	/**
 	 * Methods for Colors
 	 */
-	red: (string) => {
-		console.log(FgRed + string + Reset);
-	},
+  red: (string) => {
+    console.log(FgRed + string + Reset);
+  },
 
-	green: (string) => {
-		console.log(FgGreen + string + Reset);
-	},
+  green: (string) => {
+    console.log(FgGreen + string + Reset);
+  },
 
-	yellow: (string) => {
-		console.log(FgYellow + string + Reset);
-	},
+  yellow: (string) => {
+    console.log(FgYellow + string + Reset);
+  },
 
-	blue: (string) => {
-		console.log(FgBlue + string + Reset);
-	}
+  blue: (string) => {
+    console.log(FgBlue + string + Reset);
+  }
 
 }
