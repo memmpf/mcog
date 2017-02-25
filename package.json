@@ -1,0 +1,23 @@
+{
+  "name": "mcog",
+  "version": "0.1.0",
+  "description": "Simple colored logging",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memmpf/mcog.git"
+  },
+  "author": "Miika Kulmala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/memmpf/mcog/issues"
+  },
+  "homepage": "https://github.com/memmpf/mcog#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
